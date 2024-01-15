@@ -16,6 +16,7 @@ import MyFooter from "./components/MyFooter"
     },
     data(){
       return{
+        //Dados que serão passados como props no Navbar
         logo_src: "/img/logo.png",
         logo_alt: "Logo Vue"
       }
@@ -24,6 +25,13 @@ import MyFooter from "./components/MyFooter"
 </script>
 
 <style>
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
   .main-content{
       display: flex;
       flex-direction: column;
@@ -32,7 +40,10 @@ import MyFooter from "./components/MyFooter"
       padding: 20px;
       width: 100%;
       min-height: 70vh;
-      background-color: rgb(224, 243, 231);
+      background-color: rgb(238, 248, 242);
+  }
+  h1{
+    color:#1a1a1a;
   }
 </style>
 
